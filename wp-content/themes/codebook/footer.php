@@ -23,7 +23,7 @@
             $res = preg_replace("/[^a-zA-Z0-9]/", "", $phone);
         ?>
         
-		<div class="text-center pt-4"><a href="mailto:<?php echo get_field('email', 'option'); ?>" class="email"><i class="fa fa-envelope mr-8"></i><?php the_field( 'email', 'option' ); ?></a></div>
+        <div class="text-center pt-4"><a href="tel:<?php echo $res; ?>" class="phone custom-button"><i class="fa fa-phone mr-8"></i><?php the_field( 'phone_number', 'option' ); ?></a></div>
         
 		<div class="container text-center site-info pb-4 pt-4">
 			
