@@ -34,14 +34,13 @@
 				<?php if ( have_rows( 'testimonials', 'option' ) ) : while ( have_rows( 'testimonials', 'option' ) ) : the_row(); ?>
 					<div class="testimonialHolder">
 						<div class="testimonialContent">
-							
+						
 						<?php $image = get_sub_field('testimonial_image');?>
 						<?php if( !empty($image) ): ?>
 							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 						<?php endif; ?>
-							<?php the_sub_field( 'testimonial_content' ); ?>
-						
-						</div>
+							
+						<?php the_sub_field( 'testimonial_content' ); ?></div>
 						<?php if(get_sub_field('number_of_stars')):
 							$no_of_stars = get_sub_field('number_of_stars');
 						?>
@@ -72,6 +71,6 @@
 
 </div>
 
-<?php if($layout = 'normal'): ?>
+<?php if($layout == 'normal'): ?>
 	</div>
 <?php endif; ?>

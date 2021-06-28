@@ -6,8 +6,9 @@
             <div class="col-12 col-sm-8 col-md-8 col-lg-9">
                 <div class="postContent">
                 <div class="postTitle"><h2 class="pb-4"><?php the_title(); ?></h2></div>
-                <div class="imgFeatured pb-5"><?php the_post_thumbnail(); ?></div>
-                <?php the_content(); ?>
+                <!-- <div class="imgFeatured pb-5"><?php //the_post_thumbnail(); ?></div> -->
+                <?php //the_content(); ?>
+                <?php get_template_part( 'template-parts/content', 'page' );?>
                 </div>
             </div>
             <div class="col-12 col-sm-4 col-md-4 col-lg-3">
