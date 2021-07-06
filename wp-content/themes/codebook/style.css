@@ -447,3 +447,20 @@ i.fa.fa-envelope.mr-8{
     font-weight: 500;
     padding: 10px;
 }
+
+
+/*Image align in the content*/
+img.alignnone{
+    float: none;
+    padding: 7px;
+}
+
+img.alignleft{
+    float: left;
+    padding: 7px;
+}
+
+img.alignnright{
+    float: right;
+    padding: 7px;
+}
