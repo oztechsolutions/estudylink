@@ -464,3 +464,11 @@ img.alignnright{
     float: right;
     padding: 7px;
 }
+
+/* team slider image width and height setter */
+.block.block--brandslider.teamslider img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border: 2px solid #0053a0;
+}
